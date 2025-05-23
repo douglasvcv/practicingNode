@@ -1,7 +1,7 @@
 let customers = [
     {id:1, nome:"Douglas", serie:8},
     {id:2, nome:"Vitor", serie:8},
-    {id:3, nome:"Carlos", serie:9}
+    {id:3, nome:"Deborah", serie:9}
 ]
 class CustomersController{
     
@@ -12,7 +12,6 @@ class CustomersController{
         if(status == 404){
             res.status(status).json({msg:"Lista não encontrada"})
         }
-        console.log("GET :: /customers")
         res.status(status).json(customers)
     }
     //Lista um registro
